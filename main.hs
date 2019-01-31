@@ -1,4 +1,5 @@
-let grades = [Int]
-let weights = [Int]
+
 finalGrade :: [Int] -> [Int] -> Int
-finalGrade x = (grades zipWith (*) weights) / weights 
+finalGrade x = (zipWith (*) weights grades) / weights 
+	where grades = [Int]
+	weights = [Int]
